@@ -2114,7 +2114,7 @@ class CSV
     esc_quote   = escape_re(@quote_char)
     @parsers = {
       # for detecting parse errors
-      quote_or_nl:    encode_re("[", esc_quote, "\r\n]"),
+      quote_or_nl:    encode_re("[", "\r\n]"),
       nl_or_lf:       encode_re("[\r\n]"),
       stray_quote:    encode_re( "[^", esc_quote, "]", esc_quote,
                                  "[^", esc_quote, "]" ),
