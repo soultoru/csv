@@ -1893,11 +1893,8 @@ class CSV
                     "Missing or stray quote in line #{lineno + 1}"
             end
             csv.last.gsub!(@double_quote_char, @quote_char)
-          elsif @liberal_parsing
-            csv << part
           else
-            raise MalformedCSVError,
-                  "Missing or stray quote in line #{lineno + 1}"
+            csv << part
           end
         elsif part =~ @parsers[:quote_or_nl]
           # Unquoted field with bad characters.
