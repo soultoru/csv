@@ -1,8 +1,8 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "csv"
-  spec.version       = "0.1.0"
+  spec.name          = "loose_csv"
+  spec.version       = "0.1.1"
   spec.authors       = ["James Edward Gray II"]
   spec.email         = [nil]
 

@@ -206,7 +206,7 @@ require "stringio"
 # Please feel free to {report}[mailto:james@grayproductions.net] any issues you
 # find with it.
 #
-class CSV
+class LooseCSV
   # The version of the installed library.
   VERSION = "2.4.8"
 
